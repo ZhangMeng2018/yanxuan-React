@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>React App</title>
+      <link rel="stylesheet" href="http://at.alicdn.com/t/font_826639_66l4bftdqj3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+<script type="text/javascript">
+  (function (){
+    const dpr = window.devicePixelRatio;
+    const scale = 1/dpr;
+    const metaNode = document.querySelector('meta[name="viewport"]');
+    metaNode.setAttribute('content','width=device-width,initial-scale='+ scale +',user-scalable=no');
+    const width = document.documentElement.clientWidth;
+    const styleNode = document.createElement('style');
+    styleNode.innerHTML = 'html{font-size:'+ width/10 +'px!important;}';
+    document.head.appendChild(styleNode)
+  })()
+</script>
+  </body>
+</html>
